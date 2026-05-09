@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.SurveyApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#111111</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#111111</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+</resources>

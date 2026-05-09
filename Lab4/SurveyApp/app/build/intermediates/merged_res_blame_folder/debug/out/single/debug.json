@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.surveyapp-merged_res-31:/layout_activity_survey.xml.flat",
+        "source": "com.example.surveyapp-main-33:/layout/activity_survey.xml"
+    },
+    {
+        "merged": "com.example.surveyapp-merged_res-31:/drawable_bg_input.xml.flat",
+        "source": "com.example.surveyapp-main-33:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.example.surveyapp-merged_res-31:/layout_activity_result.xml.flat",
+        "source": "com.example.surveyapp-main-33:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.example.surveyapp-merged_res-31:/drawable_bg_button.xml.flat",
+        "source": "com.example.surveyapp-main-33:/drawable/bg_button.xml"
+    }
+]

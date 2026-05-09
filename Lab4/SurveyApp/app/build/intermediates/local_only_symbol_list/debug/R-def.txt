@@ -1,0 +1,15 @@
+R_DEF: Internal format may change without notice
+local
+drawable bg_button
+drawable bg_input
+id btnNext
+id btnRestart
+id etAnswer
+id llResults
+id progressBar
+id tvCounter
+id tvQuestion
+layout activity_result
+layout activity_survey
+string app_name
+style Theme.SurveyApp
