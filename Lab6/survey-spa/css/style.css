@@ -1,0 +1,243 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --border: #2a2a2a;
+  --ink: #f0ece4;
+  --muted: #6b6760;
+  --accent: #c9b99a;
+  --accent-dim: #8a7d6a;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  width: 100%;
+  max-width: 600px;
+}
+
+.view {
+  animation: viewIn 0.3s ease forwards;
+}
+
+@keyframes viewIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px;
+}
+
+.progress-track {
+  height: 2px;
+  background: var(--border);
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+  transition: width 0.4s ease;
+}
+
+.counter {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-align: right;
+  margin-bottom: 36px;
+}
+
+.question-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 12px;
+}
+
+.question-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--ink);
+  margin-bottom: 28px;
+}
+
+.answer-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink);
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.answer-input::placeholder {
+  color: var(--muted);
+}
+
+.answer-input:focus {
+  border-color: var(--accent-dim);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.btn-primary:hover {
+  background: var(--ink);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  margin-right: 12px;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+.result-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.result-subtitle {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.result-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.result-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.result-question {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 6px;
+}
+
+.result-answer {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.result-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 20px;
+}
+
+.start-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.start-desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.start-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-meta {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 300;
+}
